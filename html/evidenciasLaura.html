@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evidencias - COMUNI-K</title>
+  <link rel="stylesheet" href="../css/index.css">
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar">
+    <div class="logo">COMUNI-K</div>
+    <div class="nav-links">
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a href="/COMUNI-K/index.html">Inicio</a>
+        </li>
+        <li class="nav-li">
+          <div class="dropdown">
+            <button class="dropdown-button">Evidencias ▾</button>
+              <div class="dropdown-content">
+                <a href="/COMUNI-K/html/evidenciasSergio.html">Sergio Valencia</a>
+                <a href="/COMUNI-K/html/evidenciasElizabeth.html">Elizabeth Mora</a>
+                <a href="/COMUNI-K/html/evidenciasLaura.html">Laura Muñoz</a>
+                <a href="/COMUNI-K/html/evidenciasSantiago.html">Santiago Molina</a>
+              </div>
+          </div>
+        </li>
+        <li class="nav-li">
+          <a href="/COMUNI-K/html/nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-li">
+          <a href="/COMUNI-K/html/lecciones.html">Lecciones De Vida</a>
+        </li>
+        <li class="nav-li">
+          <a href="/COMUNI-K/html/tematicas.html">Tematicas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header id="inicio">
+    <h1>Evidencias</h1>
+    <p>By Laura Muñoz</p>
+  </header>
+
+  
+
+<section class="tematicas-container">
+  <h2 class="seccion-titulo">Elige a alguien para ver sus evidencias...</h2>
+  <div class="tematicas-content">
+
+    
+      <a href="evidenciasSergio.html" style="text-decoration: none;"> <h3>Sergio Valencia</h3> </a>
+    
+      <a href="evidenciasLaura.html" style="text-decoration: none;"> <h3>Laura Muñoz</h3> </a>
+    
+      <a href="evidenciasSantiago.html" style="text-decoration: none;"> <h3>Santiago Molina</h3> </a>
+
+      <a href="evidenciasElizabeth.html" style="text-decoration: none;"> <h3>Elizabeth Mora</h3> </a>
+ 
+
+  </div>
+</section>
+
+  <!-- Sección: evidencia 0 -->
+  <section id="evidencias">
+    <h2>0. CUENTO</h2>
+    <embed src="../img/Laura Manuela Muñoz Hernández .pdf" type="application/pdf" width="100%" height="600px" />
+
+  </section>
+
+
+  <!-- Sección: evidencia 1 -->
+  <section id="evidencias">
+    <h2>1. TALLER DE TIPOS DE COMUNICACIÓN</h2>
+    <embed src="../img/1laura.pdf" type="application/pdf" width="100%" height="600px" />
+
+  </section>
+<!-- Sección: evidencia 2 -->
+  <section id="evidencias">
+    <h2>2. PRESENTACIÓN FUNCIONES DEL LENGUAJE </h2>
+    <embed src="../img/2laura.pdf" type="application/pdf" width="100%" height="600px" />
+
+  </section>
+<!-- Sección: evidencia 3 -->
+  <section id="evidencias">
+    <h2>3. INVESTIGACIÓN COMUNICACIÓN NO VERBAL</h2>
+    <embed src="../img/3laura.pdf" type="application/pdf" width="100%" height="600px" />
+
+  </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".dropdown-button");
+    const menu = document.querySelector(".dropdown-content");
+
+    button.addEventListener("click", function (e) {
+      e.stopPropagation(); // Evita que el clic se propague
+      menu.classList.toggle("show");
+    });
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener("click", function () {
+      menu.classList.remove("show");
+    });
+  });
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 COMUNI-K. Todos los derechos reservados. Diseñado con 💙</p>
+  </footer>
+
+</body>
+</html>

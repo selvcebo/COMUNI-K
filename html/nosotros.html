@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio - COMUNI-K</title>
+  <link rel="stylesheet" href="../css/index.css">
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar">
+    <div class="logo">COMUNI-K</div>
+    <div class="nav-links">
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a href="/COMUNI-K/index.html">Inicio</a>
+        </li>
+        <li class="nav-li">
+          <div class="dropdown">
+            <button class="dropdown-button">Evidencias ▾</button>
+              <div class="dropdown-content">
+                <a href="/COMUNI-K/html/evidenciasSergio.html">Sergio Valencia</a>
+                <a href="/COMUNI-K/html/evidenciasElizabeth.html">Elizabeth Mora</a>
+                <a href="/COMUNI-K/html/evidenciasLaura.html">Laura Muñoz</a>
+                <a href="/COMUNI-K/html/evidenciasSantiago.html">Santiago Molina</a>
+              </div>
+          </div>
+        </li>
+        <li class="nav-li">
+          <a href="/COMUNI-K/html/nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-li">
+          <a href="/COMUNI-K/html/lecciones.html">Lecciones De Vida</a>
+        </li>
+        <li class="nav-li">
+          <a href="/COMUNI-K/html/tematicas.html">Tematicas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header id="inicio">
+    <h1>COMUNI-K</h1>
+    <p>¿Quiénes somos?</p>
+  </header>
+
+  
+  <!-- Nosotros -->
+    <div class="grid-2x2">
+        <div class="grid-item">
+            <h1>
+                Laura Manuela 
+            </h1>
+            <br>
+            <img src="../img/lauraFoto.png" alt="" class="fotoNosotros">
+            <br>
+            <br>
+            <div class="div-bio">
+                <h3 class="bio">
+                Soy una persona curiosa, creativa y con muchas ganas de aprender cosas nuevas cada día. Me gusta explorar diferentes áreas, desde lo académico hasta lo personal, y siempre busco maneras de crecer y mejorar. Disfruto compartir ideas, ayudar a los demás y encontrar soluciones prácticas a los retos que se presentan. Me considero alguien perseverante, responsable y con una mentalidad abierta, lo que me permite adaptarme fácilmente a distintos entornos y situaciones.
+            </h3>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h1>
+                Santiago Molina
+            </h1>
+            <br>
+            <img src="../img/santiagoFoto.png" alt="" class="fotoNosotros">
+            <br>
+            <br>
+            <div class="div-bio">
+                <h3 class="bio">
+                Me llamo Santiago Molina Muñoz, tengo 19 años y actualmente soy estudiante del SENA en la carrera de Análisis y Desarrollo de Software. Me apasiona la tecnología, la programación y el aprendizaje constante, ya que busco fortalecer mis conocimientos para convertirme en un profesional capaz de aportar soluciones innovadoras en el área del desarrollo de software.
+            </h3>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h1> 
+                Sergio Valencia
+            </h1>
+            <br>
+            <img src="../img/sergioFoto.png" alt="sergio" class="fotoNosotros">
+            <br>
+            <br>
+            <div class="div-bio">
+                  <h3 class="bio">
+                Mi nombre completo es Sergio Esteban León Valencia, tengo 17 años, amo los animales (principalmente felinos), me apasionan muchas cosas, pero principalmente la música y la tecnología. Soy una persona muy curiosa, me gusta aprender cosas nuevas y compartir mis conocimientos con los demás. Me considero una persona responsable, leal, creativa y con muchas ganas de crecer tanto personal como profesionalmente.
+            </h3>
+            </div>
+
+        </div>
+        <div class="grid-item">
+            <h1>
+                Elizabeth Mora
+            </h1>
+            <br>
+            <img src="../img/elizabethFoto.png" alt="elizabeth" class="fotoNosotros">
+            <br>
+            <br>
+            <div class="div-bio">
+                  <h3 class="bio">
+                    Hola, me llamo Elizabeth, tengo 18 años. Me gusta el arte, la programación, los árboles, la música, y el disfrutar de las cosas simples. Actualmente estoy estudiando en el SENA, haciendo una tecnología en análisis y desarrollo de software. Aspiro aprender mucho y ser buena en el desarrollo de la programación.
+            </h3>
+            </div>
+        </div>
+    </div>
+
+  <section class="tematicas-container">
+  <h2 class="seccion-titulo">Elige a alguien para ver sus evidencias</h2>
+  <div class="tematicas-content">
+
+
+  <a href="evidenciasSergio.html">
+    <div class="tematica" style="background-image: url('../img/sergioFoto.png');">
+        <h3>Sergio Valencia</h3>
+    </div>
+  </a>
+  <a href="evidenciasElizabeth.html">
+      <div class="tematica" style="background-image: url('../img/elizabethFoto.png');">
+        <h3>Elizabeth Mora</h3>
+      </div>
+  </a>
+  <a href="evidenciasLaura.html">
+    <div class="tematica" style="background-image: url('../img/lauraFoto.png');">
+      <h3>Laura Muñoz</h3>
+    </div>
+  </a>
+  
+  <a href="evidenciasSantiago.html">
+    <div class="tematica" style="background-image: url('../img/santiagoFoto.png');">
+      <h3>Santiago Molina</h3>
+    </div>
+  </a>
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".dropdown-button");
+    const menu = document.querySelector(".dropdown-content");
+
+    button.addEventListener("click", function (e) {
+      e.stopPropagation(); // Evita que el clic se propague
+      menu.classList.toggle("show");
+    });
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener("click", function () {
+      menu.classList.remove("show");
+    });
+  });
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 COMUNI-K. Todos los derechos reservados. Diseñado con 💙</p>
+  </footer>
+
+</body>
+</html>

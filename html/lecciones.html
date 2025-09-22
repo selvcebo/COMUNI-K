@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio - COMUNI-K</title>
+  <link rel="stylesheet" href="../css/index.css">
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar">
+    <div class="logo">COMUNI-K</div>
+    <div class="nav-links">
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a href="/COMUNI-K/index.html">Inicio</a>
+        </li>
+        <li class="nav-li">
+          <div class="dropdown">
+            <button class="dropdown-button">Evidencias ▾</button>
+              <div class="dropdown-content">
+                <a href="/COMUNI-K/html/evidenciasSergio.html">Sergio Valencia</a>
+                <a href="/COMUNI-K/html/evidenciasElizabeth.html">Elizabeth Mora</a>
+                <a href="/COMUNI-K/html/evidenciasLaura.html">Laura Muñoz</a>
+                <a href="/COMUNI-K/html/evidenciasSantiago.html">Santiago Molina</a>
+              </div>
+          </div>
+        </li>
+        <li class="nav-li">
+          <a href="/COMUNI-K/html/nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-li">
+          <a href="/COMUNI-K/html/lecciones.html">Lecciones De Vida</a>
+        </li>
+        <li class="nav-li">
+          <a href="/COMUNI-K/html/tematicas.html">Tematicas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header id="inicio">
+    <h1>Lecciones</h1>
+    <p>que nos deja la formación de comunicaciones</p>
+
+    
+  </header>
+
+
+
+<section class="tematicas-container">
+  <h2 class="seccion-titulo">Frases de reflexión</h2>
+  <div class="tematicas-content">
+
+       <div class="grid-2x2">
+        <div class="grid-item">
+          <h1> 
+            Laura Manuela 
+          </h1> 
+          <h3> 
+            Frase:
+            "La comunicación, en todos sus tipos, es el arte de mostrarnos humanos y buscar ser entendidos."
+            <br>
+            <br>
+            Explicación:
+            Con esta frase se quiere transmitir que cada forma de comunicación ya sea hablar, escribir, gesticular o incluso guardar silencio tiene como esencia revelar quiénes somos y tender un puente hacia el otro para encontrar comprensión.
+          </h3>
+        </div>
+        <div class="grid-item">
+          <h1>
+            Santiago Molina
+          </h1> 
+          <h3>
+            Frase:
+            "Comunicar, sin importar el medio, es tender un puente entre mi mundo y el tuyo."
+            <br>
+            <br>
+            <br>
+            Explicación:
+            La idea es mostrar que los tipos de comunicación no son simples técnicas, sino formas de acercar realidades distintas. Cada gesto, palabra o mensaje busca conectar lo que sentimos y pensamos con la experiencia del otro.
+          </h3>
+        </div>
+        <div class="grid-item">
+          <h1>
+            Sergio Valencia
+          </h1>
+          <h3>
+            Frase: "El cuerpo habla lo que la boca calla."
+            <br>
+            <br>
+            Explicación: El cuerpo mediante gestos, posturas y expresiones transmite emociones y pensamientos que a veces las palabras no logran expresar. La comunicación no verbal es poderosa porque revela lo que realmente sentimos, incluso cuando intentamos ocultarlo con palabras.
+          </h3>
+        </div>
+        <div class="grid-item">
+          <h1>
+            Elizabeth Mora           
+          </h1>
+          <h3>
+            Frase: “Hablar sin entender es como mandar un mensaje sin señal.”
+            <br><br>
+          Explicación: si solo hablas pero no te esfuerzas en entender al otro, la comunicación no llega a ningún lado, queda perdida, como cuando mandas un WhatsApp sin internet.
+          </h3>
+        </div>
+    </div>
+
+
+  </div>
+</section>
+
+ 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".dropdown-button");
+    const menu = document.querySelector(".dropdown-content");
+
+    button.addEventListener("click", function (e) {
+      e.stopPropagation(); // Evita que el clic se propague
+      menu.classList.toggle("show");
+    });
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener("click", function () {
+      menu.classList.remove("show");
+    });
+  });
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 COMUNI-K. Todos los derechos reservados. Diseñado con 💙</p>
+  </footer>
+
+</body>
+</html>
