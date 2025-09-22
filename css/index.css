@@ -314,7 +314,7 @@ a:visited{
 .div-bio{
   background-color: white;
   border-radius: 10px;
-  height: 300px;
+  min-height: 300px;
   display: flex;
   justify-content: justify;
   align-items: center;
